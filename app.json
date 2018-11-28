@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/confirm/confirm",
     "pages/index/index",
     "pages/clock/clock",
     "pages/setting/setting",
     "pages/taskDetail/detail",
+    "pages/confirm/confirm",
     "pages/setting/setTime/time",
     "pages/setting/about/about"
   ],
