@@ -6,7 +6,8 @@
     "pages/taskDetail/detail",
     "pages/confirm/confirm",
     "pages/setting/setTime/time",
-    "pages/setting/about/about"
+    "pages/setting/about/about",
+    "pages/setting/music/music"
   ],
   "window": {
     "backgroundTextStyle": "light",

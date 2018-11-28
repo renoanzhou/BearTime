@@ -36,7 +36,8 @@ App({
     var setting = wx.getStorageSync("setting");;
     if(!setting) {
       setting = {
-        setMinute: 25 //单位分钟
+        setMinute: 25, //单位分钟
+        setSecond: 0 //单位秒
       }
       wx.setStorage({
         key: 'setting',

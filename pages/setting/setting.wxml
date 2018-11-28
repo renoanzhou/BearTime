@@ -1,5 +1,5 @@
 <!--pages/setting/setting.wxml-->
 <view class='title'>设置</view>
 <navigator url="/pages/setting/setTime/time" class="setting"><view class='iconfont icon-clock' style='position:absolute;left:30rpx'></view>时间</navigator>
-<view class="setting" style='border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; '><view class='iconfont icon-music' style='position:absolute;left:30rpx;color:#636363'></view>音效</view>
+<navigator url="/pages/setting/music/music" class="setting" style='border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; '><view class='iconfont icon-music' style='position:absolute;left:30rpx;color:#636363'></view>音效</navigator>
 <navigator url="/pages/setting/about/about" class="setting"><view class='iconfont icon-aboutus' style='position:absolute;left:30rpx'></view>关于</navigator>

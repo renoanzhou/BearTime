@@ -34,7 +34,9 @@ Page({
   onShow: function () {
     var app = getApp();
     this.data.state.finish = app.clockState.finish;
-    this.data.setMinute = wx.getStorageSync("setting")['setMinute'];
+    var setting = wx.getStorageSync("setting");
+    this.data.setMinute = setting['setMinute'];
+    this.data.setSecond = setting['setSecond'];
     var finishTasks = wx.getStorageSync("finish");
     var todayDate = new Date().toLocaleDateString();
     this.data.todayFinish = [];
@@ -47,8 +49,9 @@ Page({
     }
     this.setData({
       setMinute: this.data.setMinute,
+      setSecond: this.data.setSecond,
       state: this.data.state,
-      todayFinish:this.data.todayFinish
+      todayFinish: this.data.todayFinish
     });
   },
   formatTime: function (num) {

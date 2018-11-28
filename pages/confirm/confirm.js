@@ -27,10 +27,12 @@ Page({
   },
   confirm: function() {
     var finishTasks = wx.getStorageSync('finish') || [];
-    var finishTime = new Date().getTime();
+    var setting = wx.getStorageSync('setting')  //获得默认设置
+    var finishTime = new Date().getTime();  //今日的时间 和今日完成任务列表有关
     for(var item in this.data.confirmTasks) {
       var data = this.data.tasks.splice(item,1); //删除tasks中提交了的任务
       data[0].finishTime = finishTime;
+      data[0].setting = setting; //保存这个完成的钟的设置(钟设置时间等等...)
       finishTasks.push(data[0]);
     }
     wx.setStorage({

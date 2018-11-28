@@ -14,12 +14,25 @@ Page({
   onLoad: function (options) {
 
   },
-  setMinute: function (e) {
-    this.data.setting["setMinute"] = e.detail.value;
-    wx.setStorage({
-      key: 'setting',
-      data: this.data.setting,
-    });
+  setTime: function (e) {
+    switch(e.target.dataset.type) {
+      case 'minute': {
+        this.data.setting["setMinute"] = e.detail.value;
+        wx.setStorage({
+          key: 'setting',
+          data: this.data.setting,
+        });
+        break;
+      }
+      case 'second': {
+        this.data.setting["setSecond"] = e.detail.value;
+        wx.setStorage({
+          key: 'setting',
+          data: this.data.setting,
+        });
+        break;
+      }
+    }
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
