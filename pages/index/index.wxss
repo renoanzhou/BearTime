@@ -15,8 +15,8 @@
   width: 100%;
   height: 100%;
   background: white;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   padding-left: 20rpx;
   padding-right: 50px;
 }
@@ -54,7 +54,7 @@
   z-index: 999
 }
 .move_active {
-  background: #ebebeb;
+  /* background: #ebebeb; */
   z-index: 999;
   opacity: 1
 }
@@ -64,12 +64,11 @@
 .under_list {
   position: absolute;
   width: 100%;
-  background: #ccc;
   top: 0;
 }
 .under_task {
   box-sizing: border-box;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
   height: 90rpx;
   width: 100%;
   background: white;

@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/confirm/confirm",
     "pages/index/index",
     "pages/clock/clock",
     "pages/setting/setting",
-    "pages/confirm/confirm",
     "pages/taskDetail/detail",
-    "pages/setting/time"
+    "pages/setting/setTime/time",
+    "pages/setting/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",

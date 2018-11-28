@@ -27,6 +27,9 @@ Page({
     wx.setStorage({
       key: "tasks",
       data: this.data.tasks
+    });
+    wx.navigateBack({
+      delta: 1
     })
   },
   deleteTask: function() {

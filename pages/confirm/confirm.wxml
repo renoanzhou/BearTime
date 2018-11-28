@@ -4,12 +4,16 @@
   <!-- <view wx:for="{{tasks}}" class='task-list'>
         {{item.text}}
   </view> -->
-  <scroll-view class="scroll-view" scroll-y style="width: 100%;height:400rpx">
+  <scroll-view class="scroll-view" scroll-y style="width: 100%;height:{{scrollHeight}}px">
   <checkbox-group bindchange="checkboxChange">
   <label class="task-list" wx:for="{{tasks}}">
     <checkbox value="{{index}}" class='checkbox'/><text style='padding-left:10rpx'>{{item.text}}</text>
   </label>
 </checkbox-group>
 </scroll-view>
-<view style='padding:10rpx;'><button class="submit" bindtap='confirm'>提交</button></view>
+<view class="tasks">
+    <input class="new-task" placeholder="请输入新任务" maxlength="30" bindinput='inputCheck' value="{{inputValue}}"/>
+    <view class="task-confirm iconfont icon-queding {{inputConfirm==0?'hide-confirm':''}}" bindtap='addTask'></view>
+  </view>
+<view style='padding:10rpx;'><button class="submit {{isChoose==1?'btn-active':''}}" bindtap='confirm' disabled="{{!isChoose}}">提交</button></view>
 </view>

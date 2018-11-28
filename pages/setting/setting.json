@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#dd4747",
+  "navigationBarTitleText": "设置",
+  "navigationBarTextStyle": "white"
+}

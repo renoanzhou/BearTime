@@ -16,7 +16,7 @@ Page({
     _index:999, // 用于拖拉时,点击时给对于的list添加class
     inputConfirm:0,
     inputText:'',
-    inputValue:'',
+    inputValue:'', //设置默认值,恢复默认值
     scrollHeight:''
   },
   taskClick: function(e) {

@@ -1,0 +1,6 @@
+<!--pages/setting/time.wxml--> 
+<view class='title'>时间</view> 
+<view class='min-con'> 
+  <text class='min-text'>设置时间:</text> 
+  <slider class="min-slider" bindchange="setMinute" min="1" max="60" show-value value='{{setting.setMinute}}' /> 
+</view> 
