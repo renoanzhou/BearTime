@@ -4,7 +4,8 @@
     "pages/clock/clock",
     "pages/setting/setting",
     "pages/confirm/confirm",
-    "pages/taskDetail/detail"
+    "pages/taskDetail/detail",
+    "pages/setting/time"
   ],
   "window": {
     "backgroundTextStyle": "light",

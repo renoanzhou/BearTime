@@ -1,36 +1,41 @@
-// pages/setting/setting.js
+// pages/setting/time.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    setting:''
+  },
 
-  },
-  setTime: function () {
-    wx.navigateTo({
-      url: '/pages/setting/time',
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  setMinute: function(e) {
+    this.data.setting["setMinute"] = e.detail.value;
+    wx.setStorage({
+      key: 'setting',
+      data: this.data.setting,
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.data.setting = wx.getStorageSync('setting');
+    this.setData({
+      setting:this.data.setting
+    })
   },
 
   /**

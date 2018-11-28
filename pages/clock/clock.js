@@ -8,7 +8,7 @@ Page({
       finish:0 //0为未完成 1为完成状态
     },
     setMinute: 0,
-    setSecond: 5,
+    setSecond: 0,
     interval: "",
     showTime: "25:00",
     todayFinish:[],
@@ -46,7 +46,7 @@ Page({
       }
     }
     this.setData({
-      setMinute: 0,
+      setMinute: this.data.setMinute,
       state: this.data.state,
       todayFinish:this.data.todayFinish
     });

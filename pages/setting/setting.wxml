@@ -1,5 +1,5 @@
 <!--pages/setting/setting.wxml-->
 <view class='title'>设置</view>
-<view class="setting"><view class='iconfont icon-clock' style='position:absolute;left:30rpx'></view>时间</view>
+<view class="setting" bindtap='setTime'><view class='iconfont icon-clock' style='position:absolute;left:30rpx'></view>时间</view>
 <view class="setting" style='border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; '><view class='iconfont icon-music' style='position:absolute;left:30rpx;color:#636363'></view>音效</view>
 <view class="setting"><view class='iconfont icon-aboutus' style='position:absolute;left:30rpx'></view>关于</view>
