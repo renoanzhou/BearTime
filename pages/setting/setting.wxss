@@ -1,0 +1,14 @@
+/* pages/setting/setting.wxss */
+.title {
+  height: 90rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  padding-left: 30rpx;
+  color: #dd4747;
+}
+.setting {
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left:80rpx;
+  font-size: 30rpx;
+}

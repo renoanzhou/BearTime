@@ -1,0 +1,20 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="tasks">
+    <input class="new-task" placeholder="请输入新任务" maxlength="30" bindinput='inputCheck' value="{{inputValue}}"/>
+    <view class="task-confirm iconfont icon-queding {{inputConfirm==0?'hide-confirm':''}}" bindtap='addTask'></view>
+  </view>
+  <scroll-view class='tasks-list' style="height:{{scrollHeight}}px" scroll-y="true">
+    <movable-area class='tasks-move-area' bindtouchstart="touchEvent" bindtouchend='touchEvent' bindtouchmove='touchEvent' style="height:{{(tasks.length) * 90}}rpx" bindtap='testbindtap'>
+      <movable-view wx:for="{{tasks}}" class="moveable-task {{_index==index?'move_active':''}}" y="{{index * 90+'rpx'}}" direction="vertical"  data-id='{{index}}' damping="999">
+        {{item.text}}
+      </movable-view>
+    </movable-area>
+    <view class='under_list' style="height:{{(tasks.length) * 90}}rpx">
+       <view wx:for="{{tasksUnder}}" class='under_task'>
+        {{item.text}}
+      </view>
+    </view>
+    <!-- <view class="moveable-task">任务</view> -->
+  </scroll-view>
+</view>

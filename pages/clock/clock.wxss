@@ -1,0 +1,79 @@
+/**index.wxss**/
+.top {
+  position: relative;
+  height: 50%;
+  background:#f1604d;
+}
+.bottom {
+  height: 50%;
+  background: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+}
+.finish-tasks {
+  flex-grow: 1;
+}
+.clock {
+  position: absolute;
+  display: inline-block;
+  width: 250rpx;
+  height: 250rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.time {
+  color: white;
+  font-weight: 500;
+  font-size: 90rpx;
+}
+.play {
+  font-size: 90rpx;
+  color: white;
+  transform: scaleX(0.9);
+}
+.today-finish {
+  color: rgb(192, 192, 192);
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.finish-num {
+  float: right;
+  color: #333;
+}
+.finish-list {
+  height: 90rpx;
+  line-height: 90rpx;
+  background: white;
+}
+.fin-time {
+  display: inline-block;
+  text-align: center;
+  width: 110rpx;
+  font-size: 30rpx;
+  color:#ccc;
+  margin-right: 15rpx;
+}
+/* common-css */
+/* 垂直居中 */
+.vc {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.shade {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  display: none;
+}

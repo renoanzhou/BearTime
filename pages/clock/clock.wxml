@@ -1,0 +1,20 @@
+<!--clock.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="clock">
+      <view class="time vc" hidden="{{!state.start}}" bindtap='tapClock'>{{showTime}}</view>
+      <view class="play iconfont icon-start vc" bindtap="startTomato" hidden="{{state.start}}"></view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="today-finish">今日完成任务<text class='finish-num'>{{todayFinish.length}}</text><text class='iconfont icon-queding' style='float:right;color:#00bfa5;margin-right:10rpx'></text></view>
+    <view class='finish-tasks'>
+      <scroll-view scroll-y="true" style="height:{{scrollHeight}}px">
+      <view class='finish-list' wx:for="{{todayFinish}}">
+        <view class='fin-time'>{{item.time}}</view> <text style="color:#333">{{item.text}}</text>
+      </view>
+    </scroll-view>
+    </view>
+  </view>
+</view>
+<view class='shade' style="display:{{state.finish==1?'display':'none'}}"></view>

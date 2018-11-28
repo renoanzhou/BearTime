@@ -1,0 +1,32 @@
+/* pages/taskDetail/detail.wxss */
+.container {
+  background: #ebebeb;
+}
+.task-name {
+  padding: 0rpx 20rpx;
+  background: white;
+  height: 90rpx;
+  border-radius: 3px;
+}
+.remarks {
+  box-sizing: border-box;
+  background: white;
+  padding: 10rpx 20rpx;
+  width: 100%;
+  border-radius: 3px;
+}
+.btn-save {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.btn-del {
+  background: #dd4747;
+  color: white;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.bfc {
+  width:100%;
+  box-sizing:border-box;
+  padding:20rpx 15rpx
+}

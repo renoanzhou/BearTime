@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/clock/clock",
+    "pages/setting/setting",
+    "pages/confirm/confirm",
+    "pages/taskDetail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dd4747",
+    "navigationBarTitleText": "Time",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/img/list.png",
+        "selectedIconPath": "./static/img/list_active.png"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "iconPath": "./static/img/play.png",
+        "selectedIconPath": "./static/img/play_active.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "./static/img/setting.png",
+        "selectedIconPath": "./static/img/setting_active.png"
+      }
+    ]
+  }
+}

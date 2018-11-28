@@ -1,0 +1,9 @@
+<!--pages/taskDetail/detail.wxml-->
+<view class='container'>
+  <view class='bfc'><input class='task-name' placeholder='编辑任务' value="{{text}}" bindinput='getInputValue' id='taskName'/></view>
+  <view class='bfc'>
+    <textarea class='remarks' placeholder='备注' value="{{note}}" bindinput='getInputValue' id="notes"></textarea>
+  </view>
+  <view class='bfc'><button class='btn-save' bindtap='saveTask'>保存</button></view>
+  <view class='bfc'><button class='btn-del' bindtap='deleteTask'>删除任务</button></view>
+</view>
